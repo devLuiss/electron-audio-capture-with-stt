@@ -2,8 +2,17 @@
 <html>
   <meta charset="utf-8" />
   <body>
+    <div>
+      <label>
+        <input type="radio" name="audioSource" value="microphone" checked> Microfone
+      </label>
+      <label>
+        <input type="radio" name="audioSource" value="system"> Áudio do Sistema (PC)
+      </label>
+    </div>
     <button id="startButton" class="button">Start</button>
     <button id="stopButton" class="button">Stop</button>
+    <div id="status">Pronto</div>
     <script type="module" src="./src/renderer.ts"></script>
   </body>
 </html>
